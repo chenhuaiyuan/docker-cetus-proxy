@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  cetus:
+    image: cetus:latest
+    container_name: cetus
+    #volumes:
+    #  - ./conf:/root/cetus/build/conf
+    logging:
+      options:
+        max-size: "2m"
+        max-file: "10"
+    #entrypoint: ["/cetus/build/bin/cetus", "--defaults-file=/cetus/build/conf/proxy.conf"]
+networks:
+  default:
+    external:
+      name: dbproxy_default

@@ -1,0 +1,8 @@
+{
+        "users":        [{
+                        "user": "root",
+                        "client_pwd":   "123",
+                        "server_pwd":   "123456"
+                }]
+}
+~
