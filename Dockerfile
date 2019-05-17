@@ -3,7 +3,7 @@ FROM centos:latest
 MAINTAINER chy
 
 RUN yum update -y && \
-    yum install -y make cmake gcc git glib2-devel flex libevent-devel mysql-devel gperftools-libs && \
+    yum install -y make cmake gcc git glib2-devel flex libevent-devel mysql-devel gperftools-libs net-tools && \
     cd / && \
     git clone https://github.com/Lede-Inc/cetus.git && \
     cd cetus && \
